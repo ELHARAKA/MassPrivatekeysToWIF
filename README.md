@@ -17,4 +17,4 @@ This tool convert multi bitcoin private keys hexadecimal format to WIF for impor
 - BTC: 1Diqsha8MaLeqGBe11VqxRWTLbEAc8sWtj
 - ETH: 0x81d67d8A8B1877987eA52B5FE2C11F39eD7d0D0c
 - LTC: Li4jMRYPzzhZnhAbqgU9at9fyZFGFpLKps
-- DOG: DKCFDJbshygG8wzn5EoH3B662Hcajtbnqq
+- DOGE: DKCFDJbshygG8wzn5EoH3B662Hcajtbnqq

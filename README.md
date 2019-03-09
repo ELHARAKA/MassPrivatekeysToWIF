@@ -2,9 +2,11 @@
 This tool convert privatekeys bitcoin hexadecimal format to WIF for import on Wallet, aceept massive volume, millions of keys at once.
 
 Use:
-1) Copy and Past all private keys in hexadecimal format in the file called "brute-pvks.txt". Paste all private keys in this file.
-2) Now just run the python script pvkmassconvert_compressed.py
-3) That's all, the script will export all privatekeys converted in WIF format in a new text file with name "list-WIF.txt" in the same directory that you ran the script.
+1) Clone or Download this tool.
+2) Open the downloaded folder then Copy and Past all private keys in hexadecimal format in a text file called "brute-pvks.txt". Paste all your private keys in that file.
+3) Now just run the python script named: "pvkmassconvert_compressed.py"
+4) That's all, the script will export all privatekeys converted in WIF format in a new text file with the name "list-WIF.txt" in the same directory that you ran the script.
+5) Importe all your converted private keys at once with Electrum.
 
 If this helped you, leave a tip :)
 

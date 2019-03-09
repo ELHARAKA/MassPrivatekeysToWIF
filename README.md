@@ -8,13 +8,10 @@ Use:
 
 If this helped you, leave a tip :)
 
-BTC: 1Diqsha8MaLeqGBe11VqxRWTLbEAc8sWtj
-
-ETH: 0x81d67d8A8B1877987eA52B5FE2C11F39eD7d0D0c
-
-LTC: Li4jMRYPzzhZnhAbqgU9at9fyZFGFpLKps
-
-DOG: DKCFDJbshygG8wzn5EoH3B662Hcajtbnqq
+- BTC: 1Diqsha8MaLeqGBe11VqxRWTLbEAc8sWtj
+- ETH: 0x81d67d8A8B1877987eA52B5FE2C11F39eD7d0D0c
+- LTC: Li4jMRYPzzhZnhAbqgU9at9fyZFGFpLKps
+- DOG: DKCFDJbshygG8wzn5EoH3B662Hcajtbnqq
 
 You can watch the video tutorial i made on youtube:
 

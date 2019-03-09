@@ -16,4 +16,6 @@ LTC: Li4jMRYPzzhZnhAbqgU9at9fyZFGFpLKps
 
 DOG: DKCFDJbshygG8wzn5EoH3B662Hcajtbnqq
 
+You can watch the video tutorial i made on youtube:
+
 [![bitcoin-convertmassivepvks](https://i.imgur.com/LNil7QN.png)](https://www.youtube.com/watch?v=_KznkWyNCMk)

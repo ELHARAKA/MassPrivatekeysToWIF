@@ -8,7 +8,7 @@ This tool convert multi bitcoin private keys hexadecimal format to WIF for impor
 4) The script will export all privatekeys in WIF format in a new text file called "list-WIF.txt" in the same folder.
 
 # Note
-Best wallet to import your bitcoin private keys all at once is Electrum wallet.
+Best wallet to import your bitcoin private keys (WIF Format) all at once is Electrum wallet.
 
 # YouTube Video Tutorial:
 [![bitcoin-convertmassivepvks](https://i.imgur.com/LNil7QN.png)](https://www.youtube.com/watch?v=_KznkWyNCMk)

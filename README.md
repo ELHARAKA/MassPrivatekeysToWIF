@@ -8,10 +8,8 @@ This tool convert multi bitcoin private keys hexadecimal format to WIF for impor
 4) The script will export all privatekeys in WIF format in a new text file called "list-WIF.txt" in the same directory.
 5) Importe all your converted private keys at once with Electrum.
 
-
-# You can watch the video tutorial i made on YouTube:
+# YouTube Video Tutorial:
 [![bitcoin-convertmassivepvks](https://i.imgur.com/LNil7QN.png)](https://www.youtube.com/watch?v=_KznkWyNCMk)
-
 
 # If this helped you, leave a tip :)
 - BTC: 1Diqsha8MaLeqGBe11VqxRWTLbEAc8sWtj

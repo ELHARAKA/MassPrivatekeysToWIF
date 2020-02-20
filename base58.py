@@ -4,26 +4,19 @@ Implementations of Base58 and Base58Check endcodings that are compatible
 with the bitcoin network.
 '''
 
-# This module is based upon base58 snippets found scattered over many bitcoin
-# tools written in python. From what I gather the original source is from a
-# forum post by Gavin Andresen, so direct your praise to him.
-# This module adds shiny packaging and support for python3.
-
 from hashlib import sha256
 
 __version__ = '0.2.5'
 
-# 58 character alphabet used
 alphabet = b'123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
-
-if bytes == str:  # python2
+if bytes == str:
     iseq, bseq, buffer = (
         lambda s: map(ord, s),
         lambda s: ''.join(map(chr, s)),
         lambda s: s,
     )
-else:  # python3
+else:
     iseq, bseq, buffer = (
         lambda s: s,
         bytes,

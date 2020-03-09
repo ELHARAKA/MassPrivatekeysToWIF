@@ -27,4 +27,4 @@ with open("brute-pvks.txt") as file:
 print ("__________________________________________________\n")
 print ("Developed by: Fahd El Haraka")
 print ("If this saved you time or helped, donations please for BTC Address:")
-print ("1A5Mhbitq2UN95wSm54QQn2PBZSbpFWamu")
+print ("1A5Mhbitq2UN95wSm54QQn2PBZSbpFWamu"

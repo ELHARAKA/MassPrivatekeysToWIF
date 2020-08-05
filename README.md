@@ -14,7 +14,7 @@ Python 2 OR Python 3
 [![bitcoin-convertmassivepvks](https://i.imgur.com/LNil7QN.png)](https://www.youtube.com/watch?v=_KznkWyNCMk)
 
 # If this helped you, leave a tip :)
-- BTC: 1vSZ1XGVBXG5GpuEYhdTsZvpDkKkqDShG
+- BTC: 1S75z47qUK9DehuKQ3qtu4r5U25PxZcCm
 - ETH: 0x81d67d8A8B1877987eA52B5FE2C11F39eD7d0D0c
 - LTC: Li4jMRYPzzhZnhAbqgU9at9fyZFGFpLKps
 - DOGE: DKCFDJbshygG8wzn5EoH3B662Hcajtbnqq

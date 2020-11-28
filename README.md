@@ -14,4 +14,4 @@ Python 2 OR Python 3
 [![bitcoin-convertmassivepvks](https://i.imgur.com/LNil7QN.png)](https://www.youtube.com/watch?v=_KznkWyNCMk)
 
 # If this helped you, leave a tip :)
-BTC: 1S75z47qUK9DehuKQ3qtu4r5U25PxZcCm
+Bitcoin: 1S75z47qUK9DehuKQ3qtu4r5U25PxZcCm

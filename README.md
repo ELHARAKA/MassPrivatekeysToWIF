@@ -13,5 +13,5 @@ Python 2 OR Python 3
 # YouTube Video Tutorial:
 [![bitcoin-convertmassivepvks](https://i.imgur.com/LNil7QN.png)](https://www.youtube.com/watch?v=_KznkWyNCMk)
 
-# If this helped you, leave a tip :)
+# If this tool was helpfull, you can leave a Tip if you want :)
 Bitcoin: 1PASQz4zh8SXs4GURHMwc8MvkyxVp4KQc3

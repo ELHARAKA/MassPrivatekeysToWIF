@@ -10,8 +10,5 @@ Python 2 OR Python 3
 3) Double click on "pvkmassconvert_compressed.py".
 4) The tool will export all privatekeys in WIF format in a new text file called "list-WIF.txt" in the same folder.
 
-# YouTube Video Tutorial:
-[![bitcoin-convertmassivepvks](https://i.imgur.com/LNil7QN.png)](https://www.youtube.com/watch?v=_KznkWyNCMk)
-
 # If this tool was helpfull, you can leave a Tip if you want :)
 Bitcoin: 1PASQz4zh8SXs4GURHMwc8MvkyxVp4KQc3

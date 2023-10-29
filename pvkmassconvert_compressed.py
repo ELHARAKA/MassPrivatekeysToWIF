@@ -1,5 +1,5 @@
 """
-Module to convert bitcoin private keys to Wallet Import Format (WIF) for compressed addresses.
+Module for converting massive bitcoin private keys to compressed WIF.
 """
 
 import binascii

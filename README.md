@@ -1,5 +1,6 @@
 # Mass Private keys To WIF
 This tool converts multiple bitcoin private keys from hexadecimal format to WIF (Wallet Import Format) for importing into any wallet, or for mass importing into Electrum Wallet, handling thousands of keys at once.
+* Note: Use this tool only when offline.
 
 ## Requirements
 - Python 3

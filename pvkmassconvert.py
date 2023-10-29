@@ -1,7 +1,7 @@
 import binascii, hashlib, base58, sys
 
 def convert(z):
-    with open('list-WIF.txt', 'a') as arq:  # Updated line
+    with open('list-WIF.txt', 'a') as arq:
         private_key_static = z
         extended_key = "80" + private_key_static
         first_sha256 = hashlib.sha256(binascii.unhexlify(extended_key)).hexdigest()
@@ -10,11 +10,11 @@ def convert(z):
         WIF = base58.b58encode(binascii.unhexlify(final_key))
         print("Private Key on WIF format below")
         print(WIF)
-        arq.write(f"{WIF} \n")  # Updated line
+        arq.write(f"{WIF} \n")
 
 with open("brute-pvks.txt") as file:
     for line in file:
-        print(str.strip(line))  # Updated line
+        print(str.strip(line))
         convert(str.strip(line))
 
 print("_________________________________")

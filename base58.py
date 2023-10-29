@@ -12,9 +12,11 @@ __version__ = '0.2.5'
 
 ALPHABET = b'123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
+
 def bseq(s):
     '''Convert sequence to bytes.'''
     return bytes(s)
+
 
 def b58encode_int(i, default_one=True):
     '''Encode an integer using Base58.'''
@@ -25,6 +27,7 @@ def b58encode_int(i, default_one=True):
         i, idx = divmod(i, 58)
         string = ALPHABET[idx:idx + 1] + string
     return string
+
 
 def b58encode(v):
     '''Encode a string using Base58.'''
@@ -44,6 +47,7 @@ def b58encode(v):
 
     return ALPHABET[0:1] * n_pad + result
 
+
 def b58decode_int(v):
     '''Decode a Base58 encoded string as an integer.'''
     if isinstance(v, str):
@@ -54,14 +58,15 @@ def b58decode_int(v):
         decimal = decimal * 58 + ALPHABET.index(char)
     return decimal
 
+
 def b58decode(v):
     '''Decode a Base58 encoded string.'''
     if isinstance(v, str):
         v = v.encode('ascii')
 
-    origlen = len(v)
+    orig_len = len(v)
     v = v.lstrip(ALPHABET[0:1])
-    newlen = len(v)
+    new_len = len(v)
 
     acc = b58decode_int(v)
 
@@ -70,7 +75,8 @@ def b58decode(v):
         acc, mod = divmod(acc, 256)
         result.append(mod)
 
-    return b'\0' * (origlen - newlen) + bytes(reversed(result))
+    return b'\0' * (orig_len - new_len) + bytes(reversed(result))
+
 
 def b58encode_check(v):
     '''Encode a string using Base58 with a 4 character checksum.'''
@@ -79,6 +85,7 @@ def b58encode_check(v):
 
     digest = sha256(sha256(v).digest()).digest()
     return b58encode(v + digest[:4])
+
 
 def b58decode_check(v):
     '''Decode and verify the checksum of a Base58 encoded string.'''
@@ -90,6 +97,7 @@ def b58decode_check(v):
         raise ValueError("Invalid checksum")
 
     return result
+
 
 def main():
     '''Base58 encode or decode FILE, or standard input, to standard output.'''
@@ -121,13 +129,14 @@ def main():
 
     try:
         result = fun(data)
-    except Exception as err:
-        sys.exit(err)
+    except Exception as err:  # Specify the type of exception, if known.
+        sys.exit(f"Error: {err}")
 
     if not isinstance(result, bytes):
         result = result.encode('ascii')
 
     sys.stdout.buffer.write(result)
+
 
 if __name__ == '__main__':
     main()

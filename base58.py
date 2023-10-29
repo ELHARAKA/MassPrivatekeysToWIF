@@ -1,6 +1,6 @@
 '''Base58 encoding
 
-Implementations of Base58 and Base58Check endcodings that are compatible
+Implementations of Base58 and Base58Check encodings that are compatible
 with the bitcoin network.
 '''
 
@@ -10,30 +10,9 @@ __version__ = '0.2.5'
 
 alphabet = b'123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
-if bytes == str:
-    iseq, bseq, buffer = (
-        lambda s: map(ord, s),
-        lambda s: ''.join(map(chr, s)),
-        lambda s: s,
-    )
-else:
-    iseq, bseq, buffer = (
-        lambda s: s,
-        bytes,
-        lambda s: s.buffer,
-    )
 
-
-def scrub_input(v):
-    if isinstance(v, str) and not isinstance(v, bytes):
-        v = v.encode('ascii')
-
-    if not isinstance(v, bytes):
-        raise TypeError(
-            "a bytes-like object is required (also str), not '%s'" %
-            type(v).__name__)
-
-    return v
+def bseq(s):
+    return bytes(s)
 
 
 def b58encode_int(i, default_one=True):
@@ -43,21 +22,22 @@ def b58encode_int(i, default_one=True):
     string = b""
     while i:
         i, idx = divmod(i, 58)
-        string = alphabet[idx:idx+1] + string
+        string = alphabet[idx:idx + 1] + string
     return string
 
 
 def b58encode(v):
     '''Encode a string using Base58'''
 
-    v = scrub_input(v)
+    if isinstance(v, str):
+        v = v.encode('ascii')
 
     nPad = len(v)
     v = v.lstrip(b'\0')
     nPad -= len(v)
 
     p, acc = 1, 0
-    for c in iseq(reversed(v)):
+    for c in v[::-1]:
         acc += p * c
         p = p << 8
 
@@ -69,7 +49,8 @@ def b58encode(v):
 def b58decode_int(v):
     '''Decode a Base58 encoded string as an integer'''
 
-    v = scrub_input(v)
+    if isinstance(v, str):
+        v = v.encode('ascii')
 
     decimal = 0
     for char in v:
@@ -80,7 +61,8 @@ def b58decode_int(v):
 def b58decode(v):
     '''Decode a Base58 encoded string'''
 
-    v = scrub_input(v)
+    if isinstance(v, str):
+        v = v.encode('ascii')
 
     origlen = len(v)
     v = v.lstrip(alphabet[0:1])
@@ -93,11 +75,14 @@ def b58decode(v):
         acc, mod = divmod(acc, 256)
         result.append(mod)
 
-    return (b'\0' * (origlen - newlen) + bseq(reversed(result)))
+    return (b'\0' * (origlen - newlen) + bytes(reversed(result)))
 
 
 def b58encode_check(v):
     '''Encode a string using Base58 with a 4 character checksum'''
+
+    if isinstance(v, str):
+        v = v.encode('ascii')
 
     digest = sha256(sha256(v).digest()).digest()
     return b58encode(v + digest[:4])
@@ -122,7 +107,7 @@ def main():
     import sys
     import argparse
 
-    stdout = buffer(sys.stdout)
+    stdout = sys.stdout.buffer
 
     parser = argparse.ArgumentParser(description=main.__doc__)
     parser.add_argument(
@@ -148,7 +133,7 @@ def main():
         (True, True): b58decode_check
     }[(args.decode, args.check)]
 
-    data = buffer(args.file).read()
+    data = args.file.buffer.read()
 
     try:
         result = fun(data)

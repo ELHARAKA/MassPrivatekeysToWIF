@@ -5,6 +5,7 @@ Module for converting massive bitcoin private keys to WIF.
 import binascii
 import hashlib
 import base58
+from common import process_file
 
 def convert(hex_private_key):
     """
@@ -20,10 +21,8 @@ def convert(hex_private_key):
         print(wif)
         file.write(f"{wif} \n")
 
-with open("brute-pvks.txt", encoding='utf-8') as file_handle:
-    for line in file_handle:
-        print(str.strip(line))
-        convert(str.strip(line))
+# Use the common function to process the file
+process_file("brute-pvks.txt", convert)
 
 print("_________________________________")
 print("Donations for BTC: bc1qttzkk555p78dyq9l8g7syza6n94ppysv66dps0")

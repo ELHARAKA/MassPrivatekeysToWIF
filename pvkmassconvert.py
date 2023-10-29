@@ -1,5 +1,5 @@
 """
-Module to convert bitcoin private keys to Wallet Import Format (WIF).
+Module for converting massive bitcoin private keys to WIF.
 """
 
 import binascii

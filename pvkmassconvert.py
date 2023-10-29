@@ -20,8 +20,8 @@ def convert(hex_private_key):
         print(wif)
         file.write(f"{wif} \n")
 
-with open("brute-pvks.txt", encoding='utf-8') as file:
-    for line in file:
+with open("brute-pvks.txt", encoding='utf-8') as file_handle:
+    for line in file_handle:
         print(str.strip(line))
         convert(str.strip(line))
 

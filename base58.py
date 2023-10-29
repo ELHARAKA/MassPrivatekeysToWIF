@@ -129,8 +129,8 @@ def main():
 
     try:
         result = fun(data)
-    except Exception as err:  # Specify the type of exception, if known.
-        sys.exit(f"Error: {err}")
+    except ValueError as e: # Catch Error
+        sys.exit(e)
 
     if not isinstance(result, bytes):
         result = result.encode('ascii')

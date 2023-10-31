@@ -4,7 +4,7 @@ Module for converting a hexadecimal private key WIF.
 
 import binascii
 import hashlib
-import base58
+from . import base58
 
 def convert_hex_to_wif(hex_private_key, compressed=False):
     """

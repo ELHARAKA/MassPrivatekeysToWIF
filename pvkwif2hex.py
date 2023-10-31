@@ -2,7 +2,7 @@
 Module for converting massive bitcoin private keys from WIF to HEX.
 """
 
-import base58
+from src.base58 import base58
 
 def wif_to_hex(wif_key):
     """

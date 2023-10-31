@@ -2,8 +2,8 @@
 Module for converting massive bitcoin private keys to Uncompressed WIF.
 """
 
-from conversion_utils import convert_hex_to_wif
-from common import process_file
+from src.conversion_utils import convert_hex_to_wif
+from src.common import process_file
 
 def convert(hex_private_key):
     """

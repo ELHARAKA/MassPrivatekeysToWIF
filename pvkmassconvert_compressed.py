@@ -1,5 +1,5 @@
 """
-Module for converting massive bitcoin private keys to compressed WIF.
+Module for converting massive bitcoin private keys to WIF (Compressed).
 """
 
 from src.conversion_utils import convert_hex_to_wif
@@ -7,7 +7,7 @@ from src.common import process_file
 
 def convert(hex_private_key):
     """
-    Convert a hexadecimal private key to Wallet Import Format (WIF) for Uncompressed addresses.
+    Convert a hexadecimal private key to Wallet Import Format (WIF) for compressed addresses.
     """
     wif = convert_hex_to_wif(hex_private_key, compressed=True)
     with open('list-WIF-compressed.txt', 'a', encoding='utf-8') as file:

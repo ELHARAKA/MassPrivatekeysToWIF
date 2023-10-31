@@ -17,14 +17,13 @@ def convert(hex_private_key):
         second_sha256 = hashlib.sha256(binascii.unhexlify(first_sha256)).hexdigest()
         final_key = extended_key + second_sha256[:8]
         wif = base58.b58encode(binascii.unhexlify(final_key)).decode('ascii')
-        print("Private Key on WIF Compressed format below")
-        print(wif)
-        file.write(f"{wif} \n")
+        file.write(f"{wif}\n")
 
-# Use the common function to process the file
+# Call common.py to process the file
 process_file("brute-pvks.txt", convert)
 
-print("__________________________________________________\n")
+print("Conversion complete. Check your 'list-WIF.txt' file for the converted keys.")
+print("__________________________________________________")
 print("Developed by: Fahd El Haraka")
 print("If this saved you time or helped, donations please for BTC Address:")
 print("bc1qttzkk555p78dyq9l8g7syza6n94ppysv66dps0")

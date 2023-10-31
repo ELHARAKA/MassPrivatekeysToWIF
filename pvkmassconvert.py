@@ -1,5 +1,5 @@
 """
-Module for converting massive bitcoin private keys to Uncompressed WIF.
+Module for converting massive bitcoin private keys to WIF (Uncompressed).
 """
 
 from src.conversion_utils import convert_hex_to_wif

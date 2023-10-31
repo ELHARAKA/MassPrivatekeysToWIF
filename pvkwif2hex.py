@@ -1,5 +1,5 @@
 """
-Module for converting massive bitcoin private keys from WIF to HEX.
+Module for converting multiple bitcoin private keys from WIF to HEX.
 """
 
 from src import base58

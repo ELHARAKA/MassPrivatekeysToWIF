@@ -16,7 +16,7 @@ def convert(hex_private_key):
 # Call common.py to process the file
 process_file("brute-pvks.txt", convert)
 
-print("Conversion complete. Check your 'list-WIF-compressed.txt' file for the converted keys.")
+print("Conversion successful. Check your 'list-WIF-compressed.txt' file for the converted keys.")
 print("__________________________________________________")
 print("Developed by: Fahd El Haraka")
 print("If this saved you time or helped, donations please for BTC Address:")

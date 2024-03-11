@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://pub-4921d2344b4d4baab627f5944ec5b7b0.r2.dev/Archive/assets/MassPrivatekeysToWIF.png" alt="MassPrivatekeysToWIF" width="500">
+  <img src="https://pub-4921d2344b4d4baab627f5944ec5b7b0.r2.dev/Archive/assets/MassPrivatekeysToWIF.png" alt="MassPrivatekeysToWIF" width="350">
 </p>
 
 # Mass Private keys To WIF

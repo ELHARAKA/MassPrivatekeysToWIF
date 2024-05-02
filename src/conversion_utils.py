@@ -1,5 +1,5 @@
 """
-Module for converting a hexadecimal private key WIF.
+Module for converting batch bitcoin hexadecimal private key WIF.
 """
 
 import binascii

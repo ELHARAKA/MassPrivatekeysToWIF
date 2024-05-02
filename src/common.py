@@ -1,5 +1,5 @@
 """
-Common function used in both compressed and uncompressed files.
+Common function used in compressed & uncompressed WIF.
 """
 
 def process_file(file_path, conversion_function):

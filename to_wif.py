@@ -22,6 +22,12 @@ def convert_uncompressed(hex_private_key):
         file.write(f"{wif}\n")
 
 def process_both_conversions(hex_private_key):
+    """
+    Process both compressed and uncompressed WIF conversions for a given HEX private key.
+
+    Args:
+        hex_private_key (str): The hexadecimal private key to be converted.
+    """
     convert_compressed(hex_private_key)
     convert_uncompressed(hex_private_key)
 

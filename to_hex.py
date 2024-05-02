@@ -24,6 +24,6 @@ def process_file(file_path, conversion_function):
 # Call common.py to process the file
 process_file("wif_input.txt", wif_to_hex)
 
-print("Conversion successful. Check your 'hex_output.txt' file for the converted keys.")
+print("Conversion successful. Check your 'hex_output.txt'.")
 print("_________________________________")
 print("Donations for BTC: bc1qttzkk555p78dyq9l8g7syza6n94ppysv66dps0")

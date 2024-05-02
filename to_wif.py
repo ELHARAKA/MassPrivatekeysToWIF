@@ -28,7 +28,8 @@ def process_both_conversions(hex_private_key):
 # Call common.py to process the file with both conversion functions
 process_file("hex_input.txt", process_both_conversions)
 
-print("Conversion successful. Check your 'compressed_output.txt' and 'uncompressed_output.txt' files for the converted keys.")
+print("Conversion successful. Check your 'compressed_output.txt' and "
+      "'uncompressed_output.txt' files for the converted keys.")
 print("__________________________________________________")
 print("Developed by: Fahd El Haraka")
 print("If this saved you time or helped, donations please for BTC Address:")

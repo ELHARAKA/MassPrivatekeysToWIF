@@ -21,8 +21,8 @@ This tool converts multiple bitcoin private keys from either HEX format or WIF (
     - Generate HEX from WIF: `python3 toHEX.py`
 
 4) Output files:
-    - WIF keys are in `compressed_output.txt` and `uncompressed_output.txt`.
-    - HEX keys are in `hex_output.txt`.
+    - Generated WIF keys are in `compressed_output.txt` and `uncompressed_output.txt`.
+    - Generated HEX keys are in `hex_output.txt`.
 
 ## Donations
 If this tool saved you time or helped in any way, consider making a donation to support the developer:

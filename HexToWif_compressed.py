@@ -10,13 +10,13 @@ def convert(hex_private_key):
     Convert a hexadecimal private key to Wallet Import Format (WIF) for compressed addresses.
     """
     wif = convert_hex_to_wif(hex_private_key, compressed=True)
-    with open('list-WIF-compressed.txt', 'a', encoding='utf-8') as file:
+    with open('HEX_2_WIF_Compressed.txt', 'a', encoding='utf-8') as file:
         file.write(f"{wif}\n")
 
 # Call common.py to process the file
-process_file("brute-pvks.txt", convert)
+process_file("hex.txt", convert)
 
-print("Conversion successful. Check your 'list-WIF-compressed.txt' file for the converted keys.")
+print("Conversion successful. Check your 'HEX_2_WIF_Compressed.txt' file for the converted keys.")
 print("__________________________________________________")
 print("Developed by: Fahd El Haraka")
 print("If this saved you time or helped, donations please for BTC Address:")

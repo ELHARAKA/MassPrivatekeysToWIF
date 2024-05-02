@@ -15,9 +15,9 @@ This tool converts multiple bitcoin private keys from either HEX format or WIF (
    - To convert from HEX to WIF, create a text file named "hex_input.txt" and paste all your (HEX format) private keys.
    - To convert from WIF to HEX, create a text file named "wif_input.txt" and paste all your (WIF format) private keys.
 3)
-    - To generate WIF (Compressed) run `python3 WIF_compressed.py`
-    - To generate WIF (Uncompressed) run `python3 WIF_uncompressed.py`
-    - To generate HEX from WIF, run `python3 WiftoHex.py`
+    - Generate WIF (Compressed) run `python3 WIF_compressed.py`
+    - Generate WIF (Uncompressed) run `python3 WIF_uncompressed.py`
+    - Generate HEX from WIF, run `python3 WiftoHex.py`
 
 4) The tool will export all converted private keys to a new text file(s) within the same directory. Check `compressed_output.txt` or `uncompressed_output.txt` for WIF keys OR `hex_output.txt` for HEX keys.
 
